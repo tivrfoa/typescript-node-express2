@@ -1,5 +1,18 @@
 {
-  "devDependencies": {
-    "typescript": "^3.6.3"
-  }
+	"name": "typescript-node-example",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "ts-node src/index.ts",
+		"build": "tsc",
+		"watch": "ts-node-dev --respawn src/index.ts"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.1",
+		"@types/node": "^12.7.11",
+		"ts-node-dev": "^1.0.0-pre.43",
+		"typescript": "^3.6.3"
+	},
+	"dependencies": {
+		"express": "^4.17.1"
+	}
 }
